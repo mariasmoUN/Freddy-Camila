@@ -1,0 +1,555 @@
+:root {
+    --white: #fff;
+    --light-grey: #6e6e6e;
+    --dark-grey: #3a3a3a;
+    --light-green: #959D83;
+    --dark-green: #707F62;
+}
+
+@font-face {
+    font-family: 'andasia';
+    src: url('../assets/fonts/Andasia.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../assets/images/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'andasia', sans-serif;
+    font-size: 3.5rem;
+    color: var(--dark-grey);
+    font-weight: 100;
+}
+
+.cover {
+    background-color: var(--dark-green);
+}
+
+.video_cover {
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    filter: contrast(80%);
+}
+
+.card {
+    width: 33rem;
+    margin-top: 6rem;
+    background-color: var(--white);
+    opacity: 0.8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
+    gap: 2rem;
+    padding: 5rem 3rem;
+}
+
+.card_sentence p {
+    font-family: "Belleza", sans-serif;
+    font-size: 1.8rem;
+    color: var(--light-grey);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.card_count {
+    gap: 0;
+}
+
+.card_count h3 {
+    font-family: "Belleza", sans-serif;
+    color: var(--dark-green);
+    font-size: 2.4rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+.card_count p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark-grey);
+    font-size: 1.6rem;
+    letter-spacing: .5rem;
+    margin-bottom: 2rem;
+}
+
+.countdown {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: var(--light-grey);
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card_count .format {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--light-grey);
+    font-size: 1.4rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.hands_image-container {
+    margin-top: 5rem;
+    justify-self: flex-start;
+}
+
+.hands_image-container img {
+    width: 100%;
+    align-self: flex-start;
+}
+
+.card_simple-route .summary-route {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.summary-route div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-route div > img {
+    width: 4rem;
+}
+
+.summary-route div > .text {
+    width: 25%;
+    font-family: "Belleza", sans-serif;
+    font-size: 2rem;
+    color: var(--light-grey);
+    margin-right: 2rem;
+}
+
+.summary-route div > .hour {
+    font-family: "Belleza", sans-serif;
+    font-size: 2rem;
+    color: var(--dark-grey);
+}
+
+.card .text-info {
+    font-family: "Belleza", sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--light-grey);
+}
+
+.card_ceremonia img,
+.card_sorpresa img,
+.card_recepcion img {
+    width: 10rem;
+}
+
+.card_ceremonia .btn,
+.card_sorpresa .btn,
+.card_recepcion .btn {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.card_ceremonia .btn span,
+.card_ceremonia .btn  button,
+.card_sorpresa .btn span,
+.card_sorpresa .btn button,
+.card_recepcion .btn span,
+.card_recepcion .btn button{
+    padding: .5rem;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    width: 11.5rem;
+}
+
+.card_ceremonia .btn span,
+.card_sorpresa .btn span,
+.card_recepcion .btn span {
+    border: 1px solid var(--dark-green);
+    color: var(--dark-green);
+    text-align: center;
+}
+
+.card_ceremonia .btn  button,
+.card_sorpresa .btn button,
+.card_recepcion .btn button {
+    border: none;
+    background-color: var(--dark-green);
+    cursor: pointer;
+}
+
+.card_ceremonia .btn  button > a,
+.card_sorpresa .btn button > a,
+.card_recepcion .btn button > a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.galery-container {
+    background-color: var(--dark-green);
+    opacity: 0.8;
+    width: 100%;
+    margin-top: 6rem;
+    text-align: center;
+    padding: 5rem 4rem;
+}
+
+.galery-container h2 {
+    color: var(--white);
+    margin: 1rem 0 2rem 0;
+}
+
+.galery-container img {
+    width: 7rem;
+    margin-bottom: 2rem;
+}
+
+.arrow-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.arrow-container img {
+    width: 5rem;
+    height: .8rem;
+    margin-top: .4rem;
+}
+
+.arrow-container p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: auto;
+    max-width: 600px;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 440px;
+    width: 220rem;
+    grid-gap: 5px;
+    transition: transform 0.5s ease;
+}
+
+.carousel .img {
+    height: auto;
+    width: 100%;
+    user-select: none;
+    pointer-events: none;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .img01 {
+    grid-area: 1/1/3/3;
+    background-image: url(../assets/images/01.png);
+  }
+
+  .img02 {
+    background-image: url(../assets/images/02.png);
+  }
+
+  .img03 {
+    background-image: url(../assets/images/13.png);
+  }
+  
+  .img04 {
+    grid-area: 2/3/3/5;
+    background-image: url(../assets/images/04.png);
+  }
+  
+  .img05 {
+    grid-area: 1/5/3/7;
+    background-image: url(../assets/images/05.png);
+  }
+  
+  .img06 {
+    grid-area: 1/7/2/9;
+    background-image: url(../assets/images/06.png);
+  }
+  
+  .img07 {
+    grid-area: 2/7/3/8;
+    background-image: url(../assets/images/07.png);
+  }
+  
+  .img08 {
+    grid-area: 2/8/3/9;
+    background-image: url(../assets/images/08.png);
+  }
+  
+  .img09 {
+    grid-area: 1/9/3/11;
+    background-image: url(../assets/images/09.png);
+  }
+  
+  .img10 {
+    grid-area: 1/11/2/13;
+    background-image: url(../assets/images/10.png);
+  }
+  
+  .img11 {
+    grid-area: 2/11/3/13;
+    background-image: url(../assets/images/17.png);
+  }
+  
+  .img12 {
+    grid-area: 1/13/3/15;
+    background-image: url(../assets/images/12.png);
+  }
+  
+  .img13 {
+    grid-area: 1/15/2/17;
+    background-image: url(../assets/images/14.png);
+  }
+  
+  .img14 {
+    grid-area: 2/15/3/17;
+    background-image: url(../assets/images/15.png);
+  }
+
+.versiculo-container {
+    font-family: "Belleza", sans-serif;
+    color: var(--light-grey);
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.versiculo-container p:nth-child(2) {
+    color: var(--dark-grey);
+    font-size: 2rem;
+}
+
+.pinterest-container h2 {
+    font-size: 3rem;
+}
+
+.pinterest-container img {
+    width: 10rem;
+}
+
+.format-container {
+    display: flex;
+    text-align: center;
+    font-family: "Belleza", sans-serif;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.format-container div > h3 {
+    font-size: 2rem;
+    color: var(--dark-grey);
+    font-weight: 100;
+}
+
+.format-container div > p {
+    font-size: 1.4rem;
+    color: var(--light-grey);
+    margin-top: 1rem;
+}
+
+.pinterest-container .icon-pinterest {
+    width: 7rem;
+    margin: 4rem 0 2rem 0;
+}
+
+.pinterest-container span {
+    font-family: "Belleza", sans-serif;
+    font-size: 1.8rem;
+    color: var(--light-grey);
+}
+
+.btn_pinteres-container button {
+    border: none;
+    background-color: var(--dark-green);
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    width: 11.5rem;
+}
+
+.btn_pinteres-container a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.color-container {
+    text-align: center;
+    font-family: "Belleza", sans-serif;
+    margin-top: 4rem;
+    font-size: 1.6rem;
+}
+
+.color-container p:nth-child(1) {
+    color: var(--dark-grey);
+}
+
+.color-container p:nth-child(2) {
+    color: var(--light-grey);
+    margin-top: .5rem;
+}
+
+.WhatsApp-container {
+    background-image: url(../assets/images/wpp-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 3.5rem;
+    margin-top: 6rem;
+    width: 100%;
+    gap: 2rem;
+}
+
+.WhatsApp-container h2 {
+    color: var(--white);
+    font-weight: 100;
+    margin-top: 2rem;
+}
+
+.WhatsApp-container img {
+    width: 8rem;
+    margin-top: 2rem;
+}
+
+.WhatsApp-container div {
+    margin-top: 6rem;
+    font-family: "Belleza", sans-serif;
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.WhatsApp-container div > p:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.WhatsApp-container button {
+    margin: 4rem 0;
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.WhatsApp-container a {
+    text-decoration: none;
+    color: var(--dark-green);
+}
+
+.regalo-container img {
+    width: 10rem;
+}
+
+.info-regalo {
+    text-align: center;
+    font-family: "Belleza", sans-serif;
+    font-size: 1.8rem;
+    color: var(--light-grey);
+    margin-top: 1rem;
+}
+
+.info-regalo p:nth-child(2) {
+    margin-top: 2rem;
+}
+
+.asistencia-container {
+    background-color: var(--dark-green);
+    width: 100%;
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 4rem;
+}
+
+.asistencia-container h2 {
+    color: var(--white);
+}
+
+.info-asistencia {
+    margin-top: 4rem;
+    color: var(--white);
+    font-family: "Belleza", sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.info-asistencia p:nth-child(1) {
+    margin-bottom: 2rem;
+}
+
+.chats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.chats-container button {
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+    padding: .5rem 1.5rem;
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 18rem;
+}
+
+.chats-container button > img {
+    width: 2.5rem;
+}
+
+.chats-container button > a {
+    text-decoration: none;
+    color: var(--light-green);
+}
+
+.asistencia-container .image-final {
+    margin-top: 8rem;
+    width: 12rem;
+}
