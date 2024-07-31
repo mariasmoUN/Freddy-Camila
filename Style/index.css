@@ -253,12 +253,17 @@ h2 {
 }
 
 .carousel-container {
-    overflow: hidden;
+    position: relative;
+    overflow-x: auto;
     width: 100%;
     max-width: 600px;
 }
 
-.carousel {
+.carousel-container::-webkit-scrollbar {
+    width: 30px;
+}
+
+.carousel-slide {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -268,7 +273,7 @@ h2 {
     transition: transform 0.5s ease;
 }
 
-.carousel .img {
+.carousel-slide .img {
     height: auto;
     width: 100%;
     user-select: none;
