@@ -1,3 +1,19 @@
+/* Sonido de fondo */
+function PlayAudio() {
+  document.getElementById("background-music").play();
+}
+
+/* Loader de inicio */
+document.getElementById("btn-play").addEventListener("click", () => {
+  const contenedorLoader = document.querySelector(".container--loader");
+  const cover = document.querySelector(".video_cover");
+
+  contenedorLoader.style.opacity = 0;
+  contenedorLoader.style.visibility = "hidden";
+  cover.setAttribute("autoplay", "true");
+});
+
+/* Contador de tiempo */
 const targetDate = new Date("2024-11-29T15:00:00").getTime();
 
 const countdownInterval = setInterval(function () {
@@ -38,32 +54,31 @@ const countdownInterval = setInterval(function () {
   }
 }, 1000);
 
-const carousel = document.querySelector(".carousel");
+/* Carrusel de imagenes */
+
+/* const carousel = document.querySelector(".carousel");
 let isDown = false;
 let startX;
 let scrollLeft;
 
 carousel.addEventListener("mousedown", (e) => {
   isDown = true;
-  carousel.classList.add("active");
   startX = e.pageX - carousel.offsetLeft;
   scrollLeft = carousel.scrollLeft;
 });
 
 carousel.addEventListener("mouseleave", () => {
   isDown = false;
-  carousel.classList.remove("active");
 });
 
 carousel.addEventListener("mouseup", () => {
   isDown = false;
-  carousel.classList.remove("active");
 });
 
 carousel.addEventListener("mousemove", (e) => {
   if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - carousel.offsetLeft;
-  const walk = (x - startX) * 2; // Velocidad de arrastre
+  const walk = (x - startX) * 3; // Velocidad de arrastre
   carousel.scrollLeft = scrollLeft - walk;
-});
+}); */

@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container--loader {
+    background-color: var(--dark-green);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    transition: all 1.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container--loader .fc-img {
+    width: 10rem;
+    position: absolute;
+    margin-top: 60rem;
+}
+
+.btn-play {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-play button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.btn-play button img {
+    width: 5rem;
+    opacity: 0.6;
+}

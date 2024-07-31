@@ -23,19 +23,31 @@
 </head>
 
 <body>
+    <audio id="background-music" loop> 
+        <source src="./assets/audio/Por el resto de mi vida-Andres cepeda.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+    <div class="container--loader">
+        <div class="loader">
+            <div class="btn-play" id="btn-play" onclick="PlayAudio()">
+                <button><img src="./assets/images/play.png" alt="Play"></button>
+            </div>
+        </div>
+        <img class="fc-img" src="./assets/images/F&C-light.png">
+    </div>
+    
     <section class="cover">
-        <video src="./assets/cover.mp4" class="video_cover" muted autoplay></video>
+        <video src="./assets/cover.mp4" class="video_cover" muted></video>
     </section>
 
-    <section class="image">
-        <img src="./assets/images/03.png" alt="F&C">
-    </section>
+    <section class="image"></section>
 
     <section>
         <div class="card_sentence card">
             <h2>Nos Casamos</h2>
             <p>El amor nos ha llevado a tomar la decisión de unir nuestras vidas bajo la bendición de Dios, el día más esperado de nuestras vidas ha llegado, será un momento mágico donde nuestros corazones  se unirán para siempre.<br>En este día tan importante y especial para nosotros queremos rodearnos de nuestras personas favoritas, familia y amigos.<br>Acompáñanos en nuestra boda.</p>
-            <div class="f&c-green_image">
+            <div class="fc-green_image">
                 <img src="./assets/images/F&C_green.png" alt="">
             </div>
         </div>
@@ -93,7 +105,8 @@
             <h2>Ceremonia</h2>
             <img src="./assets/images/church_icon.png" alt="Iglesia">
             <div class="text-info">
-                <p>Parroquia Santo Toribio de Mogrovejo</p>
+                <p>Parroquia Santo Toribio</p>
+                <p>Plaza Fernández de Madrid</p>
                 <p>Centro Histórico</p>
                 <p>Cartagena de Indias - Bolívar</p>
             </div>
@@ -192,7 +205,8 @@
         <span>Inspírate en los siguientes looks</span>
 
         <div class="btn_pinteres-container">
-            <button><a href="#">Ver aquí</a></button>
+            <button><a href="https://pin.it/39C7BPdAP" target="_blank">Ellos</a></button>
+            <button><a href="https://pin.it/4eUQjxUdv" target="_blank">Ellas</a></button>
         </div>
 
         <div class="color-container">
@@ -210,7 +224,7 @@
             <p>Únete a nuestro grupo de WhatsApp y comparte con todos nosotros esos momentos especiales.</p>
         </div>
 
-        <button><a href="">Grupo de WhatsApp</a></button>
+        <button><a href="https://chat.whatsapp.com/De7dG8lPHfoCywQvXdrEQo" target="_blank">Grupo de WhatsApp</a></button>
     </section>
 
     <section class="regalo-container card">
@@ -232,8 +246,8 @@
         </div>
 
         <div class="chats-container">
-            <button><img src="./assets/images/wpp-green.png" alt="WhatsApp"><a href="">Freddy</a></button>
-            <button><img src="./assets/images/wpp-green.png" alt="WhatsApp"><a href="">Camila</a></button>
+            <button><img src="./assets/images/wpp-green.png" alt="WhatsApp"><a href="https://wa.me/+573114319882" target="_blank">Freddy</a></button>
+            <button><img src="./assets/images/wpp-green.png" alt="WhatsApp"><a href="https://wa.me/+573127639529" target="_blank">Camila</a></button>
         </div>
 
         <img class="image-final" src="./assets/images/F&C-light.png" alt="F&C">

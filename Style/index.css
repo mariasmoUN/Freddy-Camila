@@ -46,16 +46,19 @@ h2 {
     width: 100%;
 }
 
-.image img {
+.image {
     width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/03.png);
+    background-size: cover;
+    background-position: center;
     filter: contrast(80%);
 }
 
 .card {
     width: 33rem;
     margin-top: 6rem;
-    background-color: var(--white);
-    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -63,6 +66,10 @@ h2 {
     box-shadow: 4px 4px 6px 0px rgba(0,0,0,0.4);
     gap: 2rem;
     padding: 5rem 3rem;
+}
+
+.fc-green_image img{
+    width: 11rem;
 }
 
 .card_sentence p {
@@ -210,8 +217,7 @@ h2 {
 }
 
 .galery-container {
-    background-color: var(--dark-green);
-    opacity: 0.8;
+    background-color: rgba(112, 127, 98, 0.75);
     width: 100%;
     margin-top: 6rem;
     text-align: center;
@@ -248,7 +254,7 @@ h2 {
 
 .carousel-container {
     overflow: hidden;
-    width: auto;
+    width: 100%;
     max-width: 600px;
 }
 
@@ -273,7 +279,7 @@ h2 {
   
   .img01 {
     grid-area: 1/1/3/3;
-    background-image: url(../assets/images/01.png);
+    background-image: url(../assets/images/05.png);
   }
 
   .img02 {
@@ -291,7 +297,7 @@ h2 {
   
   .img05 {
     grid-area: 1/5/3/7;
-    background-image: url(../assets/images/05.png);
+    background-image: url(../assets/images/01.png);
   }
   
   .img06 {
@@ -390,6 +396,11 @@ h2 {
     color: var(--light-grey);
 }
 
+.btn_pinteres-container {
+    display: flex;
+    gap: 2rem;
+}
+
 .btn_pinteres-container button {
     border: none;
     background-color: var(--dark-green);
@@ -398,7 +409,7 @@ h2 {
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.6rem;
-    width: 11.5rem;
+    width: 10rem;
 }
 
 .btn_pinteres-container a {
@@ -425,6 +436,7 @@ h2 {
 .WhatsApp-container {
     background-image: url(../assets/images/wpp-background.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -433,6 +445,7 @@ h2 {
     padding: 5rem 3.5rem;
     margin-top: 6rem;
     width: 100%;
+    height: 100vh;
     gap: 2rem;
 }
 
@@ -502,6 +515,8 @@ h2 {
 
 .asistencia-container h2 {
     color: var(--white);
+    margin-top: 2rem;
+    font-size: 3.2rem;
 }
 
 .info-asistencia {
