@@ -7,9 +7,9 @@
     <title>Freddy & Camila</title>
 
     <!-- library -->
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
-    <!-- stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./Style/loader.css">
     <link rel
     ="stylesheet" href="./Style/index.css">
@@ -23,7 +23,7 @@
     <link rel="shortcut icon" href="./assets/heart_icon.png" type="image/x-icon">
 </head>
 
-<body>
+<body id="body">
     <audio id="background-music" loop> 
         <source src="./assets/audio/Por el resto de mi vida-Andres cepeda.mp3" type="audio/mpeg">
         Tu navegador no soporta la reproducción de audio.
@@ -45,7 +45,10 @@
     <section class="image"></section>
 
     <section>
-        <div class="card_sentence card">
+        <div class="card_sentence card" 
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <h2>Nos Casamos</h2>
             <p>El amor nos ha llevado a tomar la decisión de unir nuestras vidas bajo la bendición de Dios, el día más esperado de nuestras vidas ha llegado, será un momento mágico donde nuestros corazones  se unirán para siempre.<br>En este día tan importante y especial para nosotros queremos rodearnos de nuestras personas favoritas, familia y amigos.<br>Acompáñanos en nuestra boda.</p>
             <div class="fc-green_image">
@@ -53,7 +56,10 @@
             </div>
         </div>
 
-        <div class="card_count card">
+        <div class="card_count card" 
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <h3>29 de Noviembre, 2024</h3>
             <p>FALTAN</p>
             <div class="countdown">
@@ -79,7 +85,10 @@
     </section>
 
     <section>
-        <div class="card_simple-route card">
+        <div class="card_simple-route card"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <h2>Itinerario</h2>
             <div class="summary-route">
                 <div>
@@ -102,7 +111,10 @@
             </div>
         </div>
 
-        <div class="card_ceremonia card">
+        <div class="card_ceremonia card"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <h2>Ceremonia</h2>
             <img src="./assets/images/church_icon.png" alt="Iglesia">
             <div class="text-info">
@@ -119,7 +131,10 @@
             </div>
         </div>
 
-        <div class="card_sorpresa card">
+        <div class="card_sorpresa card"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <h2>Evento Sorpresa</h2>
             <img src="./assets/images/surprise_icon.png" alt="Sorpresa">
             <div class="text-info">
@@ -136,7 +151,10 @@
             </div>
         </div>
 
-        <div class="card_recepcion card">
+        <div class="card_recepcion card"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
             <h2>Recepción</h2>
             <img src="./assets/images/brindis_icon.png" alt="Recepcion">
             <div class="text-info">
@@ -181,13 +199,19 @@
         </div>
     </section>
 
-    <section class="versiculo-container card">
+    <section class="versiculo-container card"
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine">
         <p>Más valen dos que uno, porque obtienen más fruto de su esfuerzo. Si caen, el uno levanta al otro. ¡Ay del que cae y no tiene quien lo levante! Si dos se acuestan juntos, entrarán en calor; uno solo ¿cómo va a calentarse? Uno solo puede ser vencido, pero dos pueden resistir.</p>
         <p>La cuerda de tres hilos no se rompe fácilmente.</p>
         <p>Eclesiastés 4:9-12</p>
     </section>
 
-    <section class="pinterest-container card">
+    <section class="pinterest-container card"
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine">
         <h2>Código de Vestimenta</h2>
         <img src="./assets/images/wedding_image.png" alt="Imagen de Pareja">
 
@@ -207,7 +231,7 @@
 
         <div class="btn_pinteres-container">
             <button><a href="https://pin.it/39C7BPdAP" target="_blank">Ellos</a></button>
-            <button><a href="https://pin.it/4eUQjxUdv" target="_blank">Ellas</a></button>
+            <button><a href="https://pin.it/4FGyfAhja" target="_blank">Ellas</a></button>
         </div>
 
         <div class="color-container">
@@ -228,7 +252,10 @@
         <button><a href="https://chat.whatsapp.com/De7dG8lPHfoCywQvXdrEQo" target="_blank">Grupo de WhatsApp</a></button>
     </section>
 
-    <section class="regalo-container card">
+    <section class="regalo-container card" 
+    data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-easing="ease-in-sine">
         <h2>Mesa de Regalos</h2>
         <img src="./assets/images/anillos_icon.png" alt="Anillos">
 
@@ -254,6 +281,10 @@
         <img class="image-final" src="./assets/images/F&C-light.png" alt="F&C">
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="./js/script.js"></script>
 </body>
 </html>

@@ -6,9 +6,13 @@ function PlayAudio() {
 /* Loader de inicio */
 document.getElementById("btn-play").addEventListener("click", () => {
   const contenedorLoader = document.querySelector(".container--loader");
+  const cover = document.querySelector(".video_cover");
+  var bodyHidden = document.getElementById("body");
 
   contenedorLoader.style.opacity = 0;
   contenedorLoader.style.visibility = "hidden";
+  cover.style.display = "block";
+  bodyHidden.style.overflow = "auto";
 });
 
 /* Contador de tiempo */
