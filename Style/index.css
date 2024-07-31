@@ -1,7 +1,7 @@
 :root {
     --white: #fff;
     --light-grey: #6e6e6e;
-    --dark-grey: #3a3a3a;
+    --dark-grey: #4d4d4d;
     --light-green: #959D83;
     --dark-green: #707F62;
 }
@@ -26,6 +26,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -257,10 +258,13 @@ h2 {
     overflow-x: auto;
     width: 100%;
     max-width: 600px;
+    overflow: -moz-scrollbars-none; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
 }
-
+  
 .carousel-container::-webkit-scrollbar {
-    width: 30px;
+    display: none; 
 }
 
 .carousel-slide {
